@@ -33,4 +33,15 @@ export class AppController {
       data: data,
     };
   }
+
+  @Get('main')
+  getMain(): controllerInterface {
+    return {
+      status: 0,
+      message: 'success',
+      data: {
+        message: 'some main',
+      },
+    };
+  }
 }
