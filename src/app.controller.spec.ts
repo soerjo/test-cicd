@@ -22,4 +22,12 @@ describe('AppController', () => {
       });
     });
   });
+
+  describe('/other', () => {
+    it('should return "Other World!"', () => {
+      expect(appController.getOther().status).toEqual(expect.any(Number));
+      expect(appController.getOther().message).toEqual(expect.any(String));
+      expect(appController.getOther().data).toEqual(expect.any(Object));
+    });
+  });
 });
