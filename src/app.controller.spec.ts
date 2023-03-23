@@ -30,4 +30,12 @@ describe('AppController', () => {
       expect(appController.getOther().data).toEqual(expect.any(Object));
     });
   });
+
+  describe('/main', () => {
+    it('should return "Other World!"', () => {
+      expect(appController.getMain().status).toEqual(expect.any(Number));
+      expect(appController.getMain().message).toEqual(expect.any(String));
+      expect(appController.getMain().data).toEqual(expect.any(Object));
+    });
+  });
 });
