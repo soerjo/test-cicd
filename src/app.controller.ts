@@ -39,6 +39,7 @@ export class AppController {
     return {
       status: 0,
       message: 'success',
+      data: {},
     };
   }
 }
